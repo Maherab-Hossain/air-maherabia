@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&family=Special+Elite&family=Tilt+Prism&display=swap');
+
+body{
+    background-image: url(/images/bg-1.jpg);
+    background-size: cover;
+}
+
+
+.logo{
+    font-family: 'Nosifer', cursive;
+    font-size: 30px;
+}
+
+.booking-cnt{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 70px;
+    align-items: center;
+}
+.bookingtext{
+    /* color: rgb(239, 242, 243); */
+    width: 100%;
+    float: left;
+    margin-left: 50px;
+    font-family: 'Tilt Prism', cursive;
+
+}
+.bookingtext h1{
+    font-size: 80px;
+    text-transform: uppercase;
+    font-family: 'Special Elite', cursive;
+    font-weight: 500;
+}
+.bookingtext p{
+    font-size: 30px;
+}
+.userdata{
+    background-color: #2E4053 ;
+    border: 3px solid #ffd001;
+    padding: 10px;
+    border-radius: 5px;
+    /* float: right; */
+    width: 65%;
+    margin-left: 180px;
+}
+.userdata h3{
+    margin: 10px 0px;
+    font-family: 'Nosifer', cursive;
+}
+.userdata  .destination{
+    margin: 10px 0;
+}
+.userdata  .calc{
+    margin: 10px 0;
+}
+.userdata  .calc p{
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.userdata input{
+    width: 100%;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background: #F4D03F;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+.premium{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info{
+    min-width: 300px;
+}
+.updown-btn button{
+    color: #ffd000;
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    background: transparent;
+    border: none;
+    margin-top: 20px;
+}
+.booking-form .inputs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+ .btn-style{
+    font-size: 22px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: #ffd000;
+    font-weight: 700;
+    background-color:  #F7F9F9 ;
+} 
+
+.price{
+    display: flex;
+    justify-content: space-between;
+}
+#modal{
+    display: none;
+    position:fixed;
+    left: 40%;
+    top: 20px;
+}
+
+.modalcard{
+    background-color: #2E4053;
+}

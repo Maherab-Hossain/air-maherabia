@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIR MAHERABIA</title>
+    <link rel="stylesheet" href="./css/aos.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body style="background-image: url(./images/bg-1.jpg);">
+    
+
+  <!-- nav start -->
+<section>
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-transparent" id="navMenu">
+  <div class="container" >
+    <span><a class="logo navbar-brand text-success-emphasis " href="#">AIR MAHERABIA</a></span>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarNav" >
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active fw-semibold" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-semibold" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-semibold" href="#">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-warning fw-bolder">Destination</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+      </div>
+
+</section>
+
+<!-- nav end -->
+
+
+  <!-- form start -->
+
+<div class="container-fluid">
+  <main id="bookingcnt" class="booking-cnt ">
+<div data-aos="fade-right">
+
+    <div class="bookingtext text-body-tertiary fw-bolder">
+        <h1>Next destination</h1>
+        <p class="">Keep in touch...  </p>
+    </div>
+
+</div>
+<div data-aos="fade-up"
+     data-aos-anchor-placement="up-center">
+
+    <div class="userdata text-light">
+        <h3>FLIGHTS</h3>
+        <div class="destination">
+            <label for="">Travelling From</label>
+            <input class="info-style" type="text" name="" >
+        </div>
+        <div class="destination">
+            <label for="">Travelling To</label>
+            <input class="info-style" type="text" name="" >
+        </div>
+        <div class="inputs">
+            <div class="destination">
+                <label for="">Departure</label>
+                <input class="info-style" type="date" name="">
+            </div>
+            <div class="destination">
+                <label for="">Return</label>
+                <input class="info-style" type="date" name="">
+            </div>
+        </div>
+        <div class="destination premium">
+            <div>
+                <label for="">First Class ($150)</label>
+                <input id="firstclass-ticket" class="info-style output" type="number" name="" value="0">
+            </div>
+            <div class="updown-btn">
+                <button  class="buttonup"> + </button>
+                <button  class="buttondown"> - </button>
+                <!-- <button onclick="ticketHandler(true, 'premium-ticket')" class="buttonup"> + </button>
+                <button onclick="ticketHandler(false, 'premium-ticket')" class="buttondown"> - </button> -->
+            </div>
+        </div>
+
+        <div class="destination premium">
+            <div>
+                <label for="">Economy ($100)</label>
+                <input id="economy-ticket " class="info-style output" type="number" name="" value="0">
+            </div>
+            <div class="updown-btn">
+                <button  class="buttonup"> + </button>
+                <button  class="buttondown"> - </button>
+                <!-- <button onclick="ticketHandler(true, 'economy-ticket')" class="buttonup"> + </button>
+                <button onclick="ticketHandler(false, 'economy-ticket')" class="buttondown"> - </button> -->
+            </div>
+        </div>
+        <div class="calc">
+            <div class="price">
+                <div class="left">
+                    <p>Sub-Total</p>
+                </div>
+                <div class="right">
+                    <p>$<span id="subtotal">0</span></p>
+                </div>
+            </div>
+           
+            <div class="price">
+                <div class="left">
+                    <p>Charge 10% VAT</p>
+                </div>
+                <div class="right">
+                    <p>$<span id="tax">0</span></p>
+                </div>
+            </div>
+            <hr>
+            <div class="price">
+                <div class="left">
+                    <h4>Total</h4>
+                </div>
+                <div class="right">
+                    <p>$ <span id="grand-total">00</span> </p>
+                </div>
+            </div>
+        </div>
+        <button id="bookingOk" class="btn-style">Book Now</button>
+    </div>
+
+</div>
+
+    <div class="modalbox">
+        <div id="modal">
+            <div class="card text-light modalcard">
+                <h5 class="card-header">Your tickets</h5>
+                <div class="card-body">
+                    <p class="card-text">First class ticket= <span id="ticketOneAmounts">0</span></p>
+                    <p class="card-text">Economy ticket= <span id="ticketTwoAmounts">0</span> </p>
+                    <h5 class="card-title">Total=<span id="grandTotalConfirmation">0</span></h5>
+                    <a href="#" class="btn btn-outline-danger" id="CancellationArea">Cancellation</a>
+                    <a href="#" class="btn btn-outline-success" id="paymentOk">Payment</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+</div>
+  <!-- form end -->
+
+
+
+
+
+
+
+     <script src="./js/aos.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/jquery-3.7.0.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
